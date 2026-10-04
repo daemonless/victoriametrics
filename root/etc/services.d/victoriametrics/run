@@ -1,0 +1,19 @@
+#!/bin/sh
+# VictoriaMetrics s6 service
+
+# Scrape targets are optional: VictoriaMetrics also accepts pushed metrics
+SCRAPE=""
+if [ -f /config/prometheus.yml ]; then
+    SCRAPE="-promscrape.config=/config/prometheus.yml"
+fi
+
+# Signal readiness once the healthcheck passes (FD 3, see notification-fd)
+s6-ready-when /healthz
+
+# VM_EXTRA_ARGS is unquoted on purpose: it holds several flags
+exec /usr/local/bin/s6-setuidgid bsd /usr/local/bin/victoria-metrics \
+    -storageDataPath=/config/data \
+    -httpListenAddr=:8428 \
+    -retentionPeriod="${RETENTION_PERIOD:-1y}" \
+    ${SCRAPE} \
+    ${VM_EXTRA_ARGS}

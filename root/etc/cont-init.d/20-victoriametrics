@@ -1,0 +1,10 @@
+#!/bin/sh
+# Data layout under /config: data/ is the TSDB, prometheus.yml is optional
+
+mkdir -p /config/data
+chown bsd:bsd /config
+
+# The TSDB can hold millions of files: only re-chown when PUID/PGID changed
+if [ "$(stat -f '%u:%g' /config/data)" != "$(id -u bsd):$(id -g bsd)" ]; then
+    chown -R bsd:bsd /config/data
+fi

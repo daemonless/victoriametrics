@@ -1,0 +1,4 @@
+#!/bin/sh
+# Daemonless standard healthcheck for victoriametrics
+
+fetch -qo /dev/null "http://127.0.0.1:8428/health" >/dev/null 2>&1

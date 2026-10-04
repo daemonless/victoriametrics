@@ -1,0 +1,29 @@
+# dbuild configuration file
+# Place in .daemonless/config.yaml or .dbuild.yaml (higher priority)
+#
+# Full reference: https://github.com/daemonless/dbuild
+
+icon: ':material-chart-timeline-variant:'
+
+build:
+  architectures:
+    - amd64
+    - aarch64
+  variants:
+    - tag: pkg
+      containerfile: Containerfile.pkg
+      default: true
+      aliases: ["latest"]
+      tag_desc: "Installed from the FreeBSD quarterly package repository."
+    - tag: pkg-latest
+      containerfile: Containerfile.pkg
+      args:
+        BASE_VERSION: "15.1-latest"
+      tag_desc: "Installed from the FreeBSD latest package repository."
+
+cit:
+  mode: screenshot
+  port: 8428
+  health: /health
+  screenshot: /vmui/
+  ready: "started server at"
