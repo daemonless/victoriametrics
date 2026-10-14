@@ -41,7 +41,7 @@ services:
       - PGID=1000  # Group ID for the application process
       - TZ=UTC  # Timezone for the container
       - RETENTION_PERIOD=1y  # How long to keep metrics (e.g. 30d, 6m, 1y)
-      - VM_EXTRA_ARGS=  # Extra command line flags passed to victoria-metrics
+      # - VM_EXTRA_ARGS=  # Extra command line flags passed to victoria-metrics
     volumes:
       - "/containers/victoriametrics:/config"
     ports:
@@ -63,7 +63,6 @@ PUID=1000
 PGID=1000
 TZ=UTC
 RETENTION_PERIOD=1y
-VM_EXTRA_ARGS=
 ```
 
 **appjail-director.yml**:
@@ -87,7 +86,6 @@ services:
         - PGID: !ENV '${PGID}'
         - TZ: !ENV '${TZ}'
         - RETENTION_PERIOD: !ENV '${RETENTION_PERIOD}'
-        - VM_EXTRA_ARGS: !ENV '${VM_EXTRA_ARGS}'
     volumes:
       - victoriametrics: /config
 volumes:
@@ -132,7 +130,6 @@ services:
       - PGID=1000
       - TZ=UTC
       - RETENTION_PERIOD=1y
-      - VM_EXTRA_ARGS=
     volumes:
       - "/containers/victoriametrics:/config"
 ```
