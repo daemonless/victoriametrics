@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-23T08:32:08Z",
+  "generated": "2026-10-23T18:27:20Z",
   "image": "victoriametrics",
   "tags": {
     "pkg-amd64": {
       "app_version": "1.133.0_12",
       "arch": "amd64",
-      "generated": "2026-10-23T08:02:58Z",
+      "generated": "2026-10-23T18:26:38Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1094,9 +1094,9 @@
       }
     },
     "pkg-latest-amd64": {
-      "app_version": "1.133.0_12",
+      "app_version": "1.133.0_13",
       "arch": "amd64",
-      "generated": "2026-10-23T08:14:43Z",
+      "generated": "2026-10-23T18:26:09Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1371,7 +1371,7 @@
               "APACHE20"
             ],
             "name": "victoria-metrics",
-            "version": "1.133.0_12"
+            "version": "1.133.0_13"
           },
           {
             "licenses": [
@@ -2160,7 +2160,7 @@
           {
             "name": "stdlib",
             "purl": "",
-            "version": "v1.27.2"
+            "version": "v1.27.3"
           }
         ],
         "java": [],
