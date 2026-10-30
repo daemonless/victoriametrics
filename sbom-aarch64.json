@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-23T22:51:42Z",
+  "generated": "2026-10-30T23:40:23Z",
   "image": "victoriametrics",
   "tags": {
     "pkg-aarch64": {
       "app_version": "1.133.0_12",
       "arch": "aarch64",
-      "generated": "2026-10-23T22:50:33Z",
+      "generated": "2026-10-30T23:38:55Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -1096,7 +1096,7 @@
     "pkg-latest-aarch64": {
       "app_version": "1.133.0_12",
       "arch": "aarch64",
-      "generated": "2026-10-23T22:50:38Z",
+      "generated": "2026-10-30T23:39:00Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1280,7 +1280,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
