@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-23T22:12:37Z",
+  "generated": "2026-10-30T22:53:39Z",
   "image": "victoriametrics",
   "tags": {
     "pkg-amd64": {
       "app_version": "1.133.0_13",
       "arch": "amd64",
-      "generated": "2026-10-23T22:11:58Z",
+      "generated": "2026-10-30T22:52:09Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -252,7 +252,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
@@ -1096,7 +1096,7 @@
     "pkg-latest-amd64": {
       "app_version": "1.133.0_13",
       "arch": "amd64",
-      "generated": "2026-10-23T22:07:51Z",
+      "generated": "2026-10-30T22:53:11Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1280,7 +1280,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -1343,7 +1343,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
