@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-30T22:53:39Z",
+  "generated": "2026-11-04T15:12:38Z",
   "image": "victoriametrics",
   "tags": {
     "pkg-amd64": {
       "app_version": "1.133.0_13",
       "arch": "amd64",
-      "generated": "2026-10-30T22:52:09Z",
+      "generated": "2026-11-04T15:11:27Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1096,7 +1096,7 @@
     "pkg-latest-amd64": {
       "app_version": "1.133.0_13",
       "arch": "amd64",
-      "generated": "2026-10-30T22:53:11Z",
+      "generated": "2026-11-04T15:12:03Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
